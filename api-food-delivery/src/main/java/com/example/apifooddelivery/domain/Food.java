@@ -15,10 +15,12 @@ import lombok.ToString;
 public class Food {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     @Column(name = "name", nullable = false)
     private String name;
     @Column(name = "description", nullable = false)
     private String description;
     @Column(name = "price", nullable = false)
     private double price;
+
 }
